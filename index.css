@@ -1,0 +1,335 @@
+body {
+    background: linear-gradient(to right, rgb(197, 230, 236), rgb(239, 187, 230));
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 13s ease infinite;
+    animation: AnimationName 13s ease infinite;
+    color: white;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    padding: 40px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 54px;
+}
+
+.pokedex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+    padding-inline-start: 0;
+}
+
+.card {
+    list-style: none;
+    padding: 40px;
+    color: #222;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.card::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 43%;
+    border-radius: 100%;
+    background-color: #fff;
+    opacity: .7;
+    position: absolute;
+    top: 2%;
+    left: 25%;
+}
+
+.steel {
+    background-color: #f4f4f4;
+}
+
+.fire {
+    background-color: #ffdbdb;
+}
+
+.fire-name {
+    background-image: url('https://thumbs.gfycat.com/AthleticSimpleHuemul-size_restricted.gif');
+    background-position: bottom right;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.grass {
+    background-color: #DEFDE0;
+}
+
+.grass-name {
+    background-color: red;
+    background-image: url('https://media1.tenor.com/images/2a3bcbcbe4e14c1cf24ef307c10c1fb9/tenor.gif?itemid=6112271');
+    background-position: bottom;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.electric {
+    background-color: #fdf3bf;
+}
+
+.electric-name {
+    background-image: url('https://37.media.tumblr.com/c30d0c15577da4b4860367eb98b07b7d/tumblr_n4d68q9Wbt1tot49lo1_500.gif');
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.water,
+.ice {
+    background-color: #DEF3FD;
+}
+
+.ice-name {
+    background-image: url('https://i.pinimg.com/originals/cd/9b/d2/cd9bd2e9e39743729ed3ad66455a2687.gif');
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-position: right right;
+}
+
+.water-name {
+    background-image: url('https://media0.giphy.com/media/3o7bu5O1zeaXvhi4ve/giphy-downsized-medium.gif');
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ground {
+    background-color: #f4e7da;
+}
+
+.ground-name {
+    background-image: url('https://media.tenor.com/images/1fcafe84476d1a10fe74033abe8ce6fe/tenor.gif');
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ghost {
+    background: #ccb9ff;
+}
+
+.ghost-name {
+    background-image: url('https://i.giphy.com/media/vruckG6ovBnCE/giphy.webp');
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-position: center center;
+}
+
+.rock {
+    background-color: #d5d5d4;
+}
+
+.rock-name {
+    background-image: url('https://thumbs.gfycat.com/ConfusedPeacefulKangaroo-max-1mb.gif');
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-position: left left;
+}
+
+.fairy {
+    background-color: #f9d5ff;
+}
+
+.fairy-name {
+    background-image: url('https://uploads.spiritfanfiction.com/fanfics/historias/201710/escrita-e-coisa-do-coracao-10533565-041020172103.gif');
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-position: center 40%;
+}
+
+.poison {
+    background-color: #98d7a5;
+}
+
+.poison-name {
+    background-image: url('https://thumbs.gfycat.com/AdmirableDemandingGoitered-max-1mb.gif');
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bug {
+    background-color: #f8d5a3;
+}
+
+.bug-name {
+    background-image: url('https://img1.picmix.com/output/stamp/thumb/5/5/7/6/1186755_aef0c.gif');
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dragon {
+    background-color: #97b3e6;
+}
+
+.dragon-name {
+    background-image: url('https://media4.giphy.com/media/pDPmnPCKd7I1W/source.gif');
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-position: top 20% center;
+}
+
+.psychic {
+    background-color: #f9cbff;
+}
+
+.psychic-name {
+    background-image: url('https://i.pinimg.com/originals/5e/25/01/5e2501ba1a8f5532a795fefc0fa4870a.gif');
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-position: center center;
+}
+
+.flying {
+    background-color: #F5F5F5;
+}
+
+.flying-name {
+    background-image: url('https://thumbs.gfycat.com/ConsiderateAlienatedCollardlizard-size_restricted.gif');
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fighting {
+    background-color: #E6E0D4;
+}
+
+.fighting-name {
+    background-image: url('https://i.pinimg.com/originals/07/5d/3e/075d3e9654414c72502c668a8d948d31.gif');
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-position: top center;
+}
+
+.normal {
+    background-color: #F5F5F5;
+}
+
+.dark {
+    background-color: #ab7bdb;
+}
+
+.dark-name {
+    background-image: url('https://static.wixstatic.com/media/924c04_2d9e1d9b155f4669b80147dceaebc030~mv2.gif');
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-position: center center;
+}
+
+.card:hover {
+    animation: bounce 0.5s linear;
+}
+
+h2 {
+    text-transform: capitalize;
+    margin-bottom: 0px;
+    font-size: 32px;
+    font-weight: normal;
+    position: relative;
+    z-index: 2;
+}
+
+p {
+    margin-top: 5px;
+    color: #666;
+    font-weight: lighter;
+    position: relative;
+    z-index: 2;
+}
+
+.card-image {
+    height: 180px;
+    position: relative;
+    z-index: 2;
+}
+
+.attributes {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.attributes p {
+    color: white;
+    margin-right: 5px;
+}
+
+.attributes .attribute-item-hp {
+    width: 100%;
+    background-color: rgb(123, 255, 96);
+    margin: 5px;
+    color: rgb(240, 240, 240);
+    border-radius: 15px;
+    transition: 400ms;
+}
+
+.attributes .attribute-item-hp h2 {
+    text-transform: uppercase;
+}
+
+.attributes .attribute-item-hp:hover {
+    transform: translateY(-5px);
+}
+
+.attributes .attribute-item-attack {
+    width: 100%;
+    background: rgb(255, 77, 77);
+    border-radius: 15px;
+    color: rgb(240, 240, 240);
+    margin: 5px;
+    transition: 400ms;
+}
+
+.attributes .attribute-item-attack:hover {
+    transform: translateY(-5px);
+}
+
+.types {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.types p {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.center-name {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes bounce {
+    20% {
+        transform: translateY(-6px);
+    }
+    40% {
+        transform: translateY(0px);
+    }
+    80% {
+        transform: translateY(-2px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
